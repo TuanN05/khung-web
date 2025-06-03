@@ -70,6 +70,27 @@
         font-size: 0.95em;
         margin: 30px 0 10px 0;
       }
+      .question-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+        justify-content: center;
+      }
+      .question-actions button {
+        background: #f1f1f1;
+        color: #2980b9;
+        border: 1px solid #2980b9;
+        padding: 8px 14px;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+      }
+      .question-actions button:hover {
+        background: #2980b9;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
@@ -84,20 +105,31 @@
     </header>
     <main>
       <section>
-        <button>Thêm câu hỏi mới</button>
-        <table>
-          <thead>
-            <tr>
-              <th>Mã câu hỏi</th>
-              <th>Nội dung</th>
-              <th>Mức độ</th>
-              <th>Thao tác</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Dữ liệu câu hỏi sẽ được render ở đây -->
-          </tbody>
-        </table>
+        <div>
+          <div class="question-actions">
+            <button>Thêm câu hỏi mới</button>
+            <button>Nhập câu hỏi từ file</button>
+            <button>Xuất danh sách câu hỏi</button>
+            <button>Kiểm tra trùng lặp</button>
+            <button>Phê duyệt câu hỏi</button>
+            <button>Giao nhiệm vụ cho giảng viên</button>
+            <button>Xem lịch sử chỉnh sửa</button>
+            <button>Thống kê câu hỏi</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Mã câu hỏi</th>
+                <th>Nội dung</th>
+                <th>Mức độ</th>
+                <th>Thao tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dữ liệu câu hỏi sẽ được render ở đây -->
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
     <footer>
