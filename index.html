@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dashboard</h1>
+      <nav>
+        <a href="/dashboard/index.html">Trang chủ</a> |
+        <a href="/questions/index.html">Ngân hàng câu hỏi</a> |
+        <a href="/exams/index.html">Bài kiểm tra</a> |
+        <a href="/statistics/index.html">Thống kê</a>
+      </nav>
+    </header>
+    <main>
+      <div class="feature-list">
+        <div class="feature-group">
+          <h3>Ngân hàng câu hỏi</h3>
+          <button onclick="location.href='../questions/index.html'">
+            Quản lý ngân hàng câu hỏi
+          </button>
+          <button>Kiểm tra câu hỏi trùng lặp</button>
+          <button>Giao nhiệm vụ cho giảng viên</button>
+        </div>
+        <div class="feature-group">
+          <h3>Bài kiểm tra</h3>
+          <button onclick="location.href='../exams/index.html'">
+            Quản lý bài kiểm tra
+          </button>
+          <button>Phê duyệt bài kiểm tra</button>
+          <button>Giao nhiệm vụ bài kiểm tra</button>
+        </div>
+        <div class="feature-group">
+          <h3>Thống kê & Báo cáo</h3>
+          <button onclick="location.href='../statistics/index.html'">
+            Thống kê tổng quan
+          </button>
+          <button>Xuất báo cáo</button>
+        </div>
+        <div class="feature-group">
+          <h3>Hệ thống & Hỗ trợ</h3>
+          <button>Quản lý người dùng</button>
+          <button>Quản lý phân quyền</button>
+          <button>Quản lý thông báo</button>
+          <button>Trợ giúp & Hỗ trợ</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 QBCA System</p>
+    </footer>
+  </body>
+</html>
