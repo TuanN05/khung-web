@@ -10,13 +10,15 @@
         margin: 0;
         padding: 0;
       }
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
       h1 {
         color: #2c3e50;
-        text-align: center;
         margin-top: 30px;
       }
       nav {
-        text-align: center;
         margin: 20px 0;
       }
       nav a {
@@ -28,64 +30,47 @@
       nav a:hover {
         text-decoration: underline;
       }
-      div {
+      main {
+        min-height: 60vh;
+      }
+      .feature-list {
         background: #fff;
-        max-width: 400px;
+        max-width: 500px;
         margin: 40px auto;
         padding: 30px 20px;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
-      p {
-        text-align: center;
-        font-size: 1.1em;
+      .feature-group {
+        margin-bottom: 28px;
       }
-      header {
-        text-align: center;
-        margin-bottom: 40px;
+      .feature-group h3 {
+        color: #2980b9;
+        margin-bottom: 12px;
+        margin-top: 0;
+      }
+      .feature-group button {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #f1f1f1;
+        color: #2c3e50;
+        transition: background 0.3s, color 0.3s;
+      }
+      .feature-group button:hover {
+        background: #2980b9;
+        color: #fff;
       }
       footer {
         text-align: center;
         color: #aaa;
         font-size: 0.95em;
         margin: 30px 0 10px 0;
-      }
-      button {
-        padding: 10px;
-        font-size: 1em;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-      button:hover {
-        background: #2980b9;
-        color: white;
-      }
-      .feature-list {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        margin-top: 30px;
-      }
-      .feature-list button {
-        padding: 10px;
-        font-size: 1em;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s;
-        background: #f1f1f1;
-      }
-      .feature-list button:hover {
-        background: #2980b9;
-        color: white;
-      }
-      hr {
-        border: 0;
-        height: 1px;
-        background: #ddd;
-        margin: 20px 0;
       }
     </style>
   </head>
@@ -100,39 +85,38 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div>
-          <p>Chào mừng bạn đến với hệ thống quản lý!</p>
-          <div class="feature-list">
-            <h3>Quản lý Ngân hàng câu hỏi</h3>
-            <button>Quản lý môn học</button>
-            <button>Quản lý CLO</button>
-            <button>Quản lý mức độ khó</button>
-            <button>Giao kế hoạch & số lượng câu hỏi</button>
-            <button>Nộp/phê duyệt câu hỏi</button>
-            <button>Kiểm tra câu hỏi trùng lặp</button>
-            <hr />
-            <h3>Quản lý Bài kiểm tra</h3>
-            <button>Quản lý bài kiểm tra</button>
-            <button>Phê duyệt bài kiểm tra</button>
-            <button>Giao nhiệm vụ bài kiểm tra</button>
-            <button>Thống kê bài kiểm tra</button>
-            <hr />
-            <h3>Hệ thống & Hỗ trợ</h3>
-            <button>Quản lý giảng viên</button>
-            <button>Quản lý tổ bộ môn</button>
-            <button>Quản lý trưởng phòng</button>
-            <button>Quản lý nhân viên R&D</button>
-            <button>Quản lý thông báo</button>
-            <button>Quản lý phân quyền</button>
-            <button>Quản lý lịch sử hoạt động</button>
-            <button>Quản lý phản hồi</button>
-            <button>Quản lý cấu hình hệ thống</button>
-            <button>Xuất báo cáo</button>
-            <button>Trợ giúp & Hỗ trợ</button>
-          </div>
+      <div class="feature-list">
+        <div class="feature-group">
+          <h3>Ngân hàng câu hỏi</h3>
+          <button onclick="location.href='questions.html'">
+            Quản lý ngân hàng câu hỏi
+          </button>
+          <button>Kiểm tra câu hỏi trùng lặp</button>
+          <button>Giao nhiệm vụ cho giảng viên</button>
         </div>
-      </section>
+        <div class="feature-group">
+          <h3>Bài kiểm tra</h3>
+          <button onclick="location.href='exams.html'">
+            Quản lý bài kiểm tra
+          </button>
+          <button>Phê duyệt bài kiểm tra</button>
+          <button>Giao nhiệm vụ bài kiểm tra</button>
+        </div>
+        <div class="feature-group">
+          <h3>Thống kê & Báo cáo</h3>
+          <button onclick="location.href='statistics.html'">
+            Thống kê tổng quan
+          </button>
+          <button>Xuất báo cáo</button>
+        </div>
+        <div class="feature-group">
+          <h3>Hệ thống & Hỗ trợ</h3>
+          <button>Quản lý người dùng</button>
+          <button>Quản lý phân quyền</button>
+          <button>Quản lý thông báo</button>
+          <button>Trợ giúp & Hỗ trợ</button>
+        </div>
+      </div>
     </main>
     <footer>
       <p>&copy; 2025 QBCA System</p>

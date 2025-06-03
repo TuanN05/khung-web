@@ -14,6 +14,10 @@
         text-align: center;
         margin-bottom: 40px;
       }
+      h1 {
+        color: #2c3e50;
+        margin-top: 30px;
+      }
       nav {
         margin: 20px 0;
       }
@@ -28,47 +32,6 @@
       }
       main {
         min-height: 60vh;
-      }
-      button {
-        display: block;
-        margin: 20px auto 30px auto;
-        background: #27ae60;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        font-size: 1em;
-        cursor: pointer;
-        transition: background 0.3s;
-      }
-      button:hover {
-        background: #219150;
-      }
-      table {
-        width: 90%;
-        margin: 0 auto 40px auto;
-        border-collapse: collapse;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      }
-      th,
-      td {
-        padding: 12px 10px;
-        border-bottom: 1px solid #eee;
-        text-align: left;
-      }
-      th {
-        background: #2980b9;
-        color: #fff;
-      }
-      tr:hover {
-        background: #f1f7ff;
-      }
-      footer {
-        text-align: center;
-        color: #aaa;
-        font-size: 0.95em;
-        margin: 30px 0 10px 0;
       }
       .question-actions {
         display: flex;
@@ -91,6 +54,37 @@
         background: #2980b9;
         color: #fff;
       }
+      table {
+        width: 95%;
+        margin: 0 auto 40px auto;
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      th,
+      td {
+        padding: 12px 10px;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+      }
+      th {
+        background: #2980b9;
+        color: #fff;
+      }
+      tr:hover {
+        background: #f1f7ff;
+      }
+      .table-actions button {
+        margin-right: 6px;
+        padding: 4px 10px;
+        font-size: 0.95em;
+      }
+      footer {
+        text-align: center;
+        color: #aaa;
+        font-size: 0.95em;
+        margin: 30px 0 10px 0;
+      }
     </style>
   </head>
   <body>
@@ -104,33 +98,49 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div>
-          <div class="question-actions">
-            <button>Thêm câu hỏi mới</button>
-            <button>Nhập câu hỏi từ file</button>
-            <button>Xuất danh sách câu hỏi</button>
-            <button>Kiểm tra trùng lặp</button>
-            <button>Phê duyệt câu hỏi</button>
-            <button>Giao nhiệm vụ cho giảng viên</button>
-            <button>Xem lịch sử chỉnh sửa</button>
-            <button>Thống kê câu hỏi</button>
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Mã câu hỏi</th>
-                <th>Nội dung</th>
-                <th>Mức độ</th>
-                <th>Thao tác</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Dữ liệu câu hỏi sẽ được render ở đây -->
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <div class="question-actions">
+        <button>Thêm câu hỏi mới</button>
+        <button>Nhập câu hỏi từ file</button>
+        <button>Xuất danh sách câu hỏi</button>
+        <button>Kiểm tra trùng lặp</button>
+        <button>Phê duyệt câu hỏi</button>
+        <button>Giao nhiệm vụ cho giảng viên</button>
+        <button>Xem lịch sử chỉnh sửa</button>
+        <button>Thống kê câu hỏi</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Mã câu hỏi</th>
+            <th>Nội dung</th>
+            <th>Mức độ</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Q001</td>
+            <td>Nội dung ví dụ 1</td>
+            <td>Dễ</td>
+            <td class="table-actions">
+              <button>Xem</button>
+              <button>Sửa</button>
+              <button>Xóa</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Q002</td>
+            <td>Nội dung ví dụ 2</td>
+            <td>Trung bình</td>
+            <td class="table-actions">
+              <button>Xem</button>
+              <button>Sửa</button>
+              <button>Xóa</button>
+            </td>
+          </tr>
+          <!-- Thêm các dòng dữ liệu khác tại đây -->
+        </tbody>
+      </table>
     </main>
     <footer>
       <p>&copy; 2025 QBCA System</p>
