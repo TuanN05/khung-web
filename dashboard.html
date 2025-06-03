@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+        margin-top: 30px;
+      }
+      nav {
+        text-align: center;
+        margin: 20px 0;
+      }
+      nav a {
+        color: #2980b9;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      div {
+        background: #fff;
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 30px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      p {
+        text-align: center;
+        font-size: 1.1em;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      footer {
+        text-align: center;
+        color: #aaa;
+        font-size: 0.95em;
+        margin: 30px 0 10px 0;
+      }
+      button {
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #2980b9;
+        color: white;
+      }
+      .feature-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 30px;
+      }
+      .feature-list button {
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        background: #f1f1f1;
+      }
+      .feature-list button:hover {
+        background: #2980b9;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dashboard</h1>
+      <nav>
+        <a href="/dashboard.html">Trang chủ</a> |
+        <a href="/questions.html">Ngân hàng câu hỏi</a> |
+        <a href="/exams.html">Bài kiểm tra</a> |
+        <a href="/statistics.html">Thống kê</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div>
+          <p>Chào mừng bạn đến với hệ thống quản lý!</p>
+          <div class="feature-list">
+            <button>Quản lý môn học</button>
+            <button>Quản lý CLO</button>
+            <button>Quản lý mức độ khó</button>
+            <button>Giao kế hoạch & số lượng câu hỏi</button>
+            <button>Nộp/phê duyệt câu hỏi</button>
+            <button>Kiểm tra câu hỏi trùng lặp</button>
+            <button>Quản lý bài kiểm tra</button>
+            <button>Phát hiện trùng lặp (AI)</button>
+            <button>Thống kê</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 QBCA System</p>
+    </footer>
+  </body>
+</html>
